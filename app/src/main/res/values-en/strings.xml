@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TrainBrain</string>
+    <string name="developer_version">Developer Version</string>
+    <string name="settings">Settings</string>
+</resources>

@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">BrainTrain</string>
+    <!-- App Data -->
+    <string name="app_name">Gehirntraining</string>
+    <string name="developer_version">Entwickler</string>
+    <!-- Titles -->
+    <string name="settings">Einstellungen</string>
 </resources>
