@@ -1,6 +1,10 @@
 package de.hirola.braintrain;
 
+import de.hirola.braintrain.model.Color;
+import de.hirola.braintrain.util.RandomListGenerator;
 import org.junit.Test;
+
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -11,7 +15,13 @@ import static org.junit.Assert.*;
  */
 public class ExampleUnitTest {
     @Test
-    public void addition_isCorrect() {
-        assertEquals(4, 2 + 2);
+    public void testRandomList() {
+        RandomListGenerator generator = new RandomListGenerator();
+        int round = 4;
+        List<Color> randomList = generator.getRandomList(round);
+        assertEquals(Color.values().length + round, randomList.size());
+        for (Color color: randomList) {
+            System.out.println(color.getValue());
+        }
     }
 }
